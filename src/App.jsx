@@ -5,11 +5,11 @@ import "./App.css";
 function App() {
   const [count, setCount] = useState(0);
 
-  const OnclickPlus = () => {
+  const handlePlus = () => {
     setCount(count + 1);
   };
 
-  const OnclickMinus = () => {
+  const handleMinus = () => {
     setCount(count - 1);
   };
 
@@ -18,10 +18,10 @@ function App() {
       <div>
         <h2>Счётчик</h2>
         <h1>{count}</h1>
-        <button onClick={OnclickMinus} className="minus">
+        <button onClick={handleMinus} className="minus">
           - Минус
         </button>
-        <button onClick={OnclickPlus} className="plus">
+        <button onClick={handlePlus} className="plus">
           Плюс +
         </button>
       </div>
